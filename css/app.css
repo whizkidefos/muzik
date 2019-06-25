@@ -1,0 +1,331 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  width: 100%;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+.left-col, .right-col {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+}
+
+.left-col {
+  background: #d45b48;
+}
+
+.left-col .logo {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  position: fixed;
+  margin: 1.4em;
+}
+
+.left-col .year {
+  position: absolute;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  bottom: 8%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.left-col .buy {
+  color: #f4c8ad;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0%;
+  top: -2.6%;
+  margin: 1.4em;
+  letter-spacing: 4px;
+}
+
+.left-col .cover {
+  position: absolute;
+  background: url(../img/violin.jpg) no-repeat 50% 50%/cover;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 45%;
+  height: 50%;
+}
+
+.left-col .data {
+  position: absolute;
+  top: 36%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #f4c8ad;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.left-col #artist {
+  font-size: 10px;
+}
+
+.left-col ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: whitesmoke;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.right-col {
+  left: 50%;
+}
+
+.upper {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background: #4f4538;
+}
+
+.bottom {
+  position: absolute;
+  top: 50%;
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8))), url(../img/saxophone.jpg) no-repeat 50% 50%/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/saxophone.jpg) no-repeat 50% 50%/cover;
+}
+
+.bottom ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: whitesmoke;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2em;
+  background: rgba(111, 100, 87, 0.3);
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.about {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about h1 {
+  font-weight: bolder;
+  color: #6f6457;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: #bcac98;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.about p:hover {
+  letter-spacing: 3px;
+}
+
+.media {
+  margin-top: 40px;
+}
+
+.media p {
+  color: #6f6457;
+  margin-bottom: 0;
+}
+
+.media ul {
+  position: absolute;
+  list-style: none;
+  left: -24%;
+}
+
+.media ul li {
+  display: inline-block;
+  color: #bcac98;
+  padding-right: 10px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.media ul li:hover {
+  margin-left: -2px;
+}
+
+.next {
+  position: absolute;
+  top: 24%;
+  left: 16%;
+}
+
+.data2 {
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  color: #cdbba5;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.more {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  font-size: 15px;
+  color: #f4c8ad;
+  text-transform: uppercase;
+  font-family: Poppins;
+  text-decoration: underline;
+}
+
+.block-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 45%;
+  height: 50%;
+}
+
+.block-cover::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #4f4538;
+  -webkit-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.upper-block {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+}
+
+.upper-block::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #9a8b78;
+  -webkit-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.block-bottom {
+  position: absolute;
+  top: 50%;
+  height: 50vh;
+  width: 100%;
+}
+
+.block-bottom::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #000;
+  -webkit-animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+/*========================== RESPONSIVE STYLING =================================*/
+@media (max-width: 900px) {
+  .left-col {
+    width: 100%;
+  }
+  .right-col {
+    top: 100%;
+    left: 0%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=app.css.map */
